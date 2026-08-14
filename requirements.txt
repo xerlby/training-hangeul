@@ -1,0 +1,7 @@
+tensorflow[and-cuda]==2.19.0
+numpy>=1.26,<3
+pillow>=10.0
+scikit-learn>=1.4
+matplotlib>=3.8
+pandas>=2.2
+seaborn>=0.13

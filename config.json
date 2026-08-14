@@ -1,0 +1,34 @@
+{
+  "seed": 42,
+  "image_size": [224, 224],
+  "num_classes": 32,
+  "batch_size": 16,
+  "feature_epochs": 50,
+  "fine_tune_epochs": 20,
+  "feature_learning_rate": 0.001,
+  "fine_tune_learning_rate": 0.00001,
+  "dense_units": 512,
+  "dropout": 0.5,
+  "augmentation": {
+    "rotation_range": 15,
+    "zoom_range": 0.2,
+    "width_shift_range": 0.15,
+    "height_shift_range": 0.15,
+    "shear_range": 0.2,
+    "fill_mode": "nearest"
+  },
+  "callbacks": {
+    "early_stopping_patience": 8,
+    "reduce_lr_factor": 0.2,
+    "reduce_lr_patience": 4,
+    "min_learning_rate": 1e-7
+  },
+  "fine_tune_layers": {
+    "vgg16": 4,
+    "resnet50": 10,
+    "mobilenetv2": 20,
+    "efficientnetb0": 10,
+    "xception": 20
+  }
+}
+
